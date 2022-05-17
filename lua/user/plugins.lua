@@ -64,6 +64,7 @@ return packer.startup(function(use)
   use "iamcco/markdown-preview.nvim"
   use "tpope/vim-endwise"
   use "tpope/vim-surround"
+  use "ruanyl/vim-fixmyjs"
 
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
@@ -108,6 +109,23 @@ return packer.startup(function(use)
   -- Git
   use "lewis6991/gitsigns.nvim"
 
+  -- Themer.Lua
+  use({
+    "themercorp/themer.lua",
+    config = function()
+      require("themer").setup({
+        colorscheme = "rose_pine",
+        styles = {
+        comment = { style = 'italic' },
+        ["function"] = { style = 'italic' },
+        functionbuiltin = { style = 'italic' },
+        variable = { style = 'italic' },
+        variableBuiltIn = { style = 'italic' },
+        parameter  = { style = 'italic' },
+      },
+    })
+    end
+  })
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
