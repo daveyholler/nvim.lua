@@ -67,7 +67,7 @@ keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
-keymap("i", "<C-.", "copilot#Accept('<CR>')", copilot_opts)
+keymap("i", "<C-.>", "copilot#Accept('<CR>')", copilot_opts)
 keymap("n", "<Leader><Leader>f", ":Fixmyjs<CR>", opts)
 
 -- Terminal --
