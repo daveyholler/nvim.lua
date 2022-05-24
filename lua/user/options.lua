@@ -48,3 +48,4 @@ vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
 vim.cmd "let g:vim_markdown_folding_disabled = 1"
 vim.cmd "let g:copilot_no_tab_map = v:true"
 vim.cmd [[imap <silent><script><expr> <C-J> copilot#Accept("\<CR>")]]
+vim.cmd("autocmd Colorscheme * highlight NvimTreeNormal guibg=none guifg=#9da5b3")
