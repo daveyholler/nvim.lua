@@ -34,7 +34,7 @@ local function footer()
     "Recommissioning in progress",
     "Can you monitor my allocation tables for a few minutes?",
     "I thought hub 5 was out for a reboot.",
-    "Someone backed into by system through a subnet.",
+    "Someone backed into my system through a subnet.",
     "Isolate the node and dump it on the other side of the router."
   }
 	return messages[math.random(#messages)] 

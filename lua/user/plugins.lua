@@ -70,6 +70,7 @@ return packer.startup(function(use)
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   use "lunarvim/darkplus.nvim"
   use "rose-pine/neovim"
+  use 'Mofiqul/dracula.nvim'
   use "catppuccin/nvim"
   use {
     "mcchrish/zenbones.nvim",
