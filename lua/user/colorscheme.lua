@@ -1,6 +1,7 @@
+vim.g.catppuccin_flavour = "macchiato"
 vim.cmd [[
 try
-  colorscheme dracula
+  colorscheme catppuccin
 catch /^Vim\%((\a\+)\)\=:E185/
   colorscheme default
   set background=dark
