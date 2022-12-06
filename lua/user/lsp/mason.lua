@@ -8,7 +8,8 @@ local servers = {
 	"jsonls",
   "emmet_ls",
 	"yamlls",
-  "solargraph"
+  "solargraph",
+  "intelephense"
 }
 
 local settings = {

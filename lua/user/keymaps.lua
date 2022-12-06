@@ -28,6 +28,9 @@ keymap("n", "<C-Up>", ":resize -2<CR>", opts)
 keymap("n", "<C-Down>", ":resize +2<CR>", opts)
 keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
+keymap("n", "<leader>n5", ":NvimTreeResize 50<CR>", opts)
+keymap("n", "<leader>n4", ":NvimTreeResize 40<CR>", opts)
+keymap("n", "<leader>n3", ":NvimTreeResize 30<CR>", opts)
 
 -- Split window
 keymap('n', 'ss', ':split<Return><C-w>w')
