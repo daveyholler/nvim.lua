@@ -70,6 +70,7 @@ return packer.startup(function(use)
   use { "lunarvim/darkplus.nvim", commit = "13ef9daad28d3cf6c5e793acfc16ddbf456e1c83" }
   use "EdenEast/nightfox.nvim"
   use "rebelot/kanagawa.nvim"
+  use "rose-pine/neovim"
   use({
     "xiyaowong/nvim-transparent",
     config = function()

@@ -6,6 +6,7 @@ saga.init_lsp_saga {
     typescript = { 'typescript' },
     ruby = { 'ruby' },
     php = { 'php' },
+    css = { 'css' },
   }
 }
 
