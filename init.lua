@@ -4,6 +4,7 @@ require "user.plugins"
 require "user.autocommands"
 require "user.colorscheme"
 require "user.cmp"
+require "user.darkmode"
 require "user.emmet"
 require "user.telescope"
 require "user.gitsigns"
@@ -21,6 +22,7 @@ require "user.indentline"
 require "user.alpha"
 require "user.lsp"
 require "user.dap"
+require "user.true-zen"
 
 
 -- Reload Neovim

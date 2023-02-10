@@ -64,13 +64,15 @@ return packer.startup(function(use)
   use "qpkorr/vim-bufkill"
   use "ruanyl/vim-fixmyjs"
   use "simrat39/symbols-outline.nvim"
-
+  use "Pocco81/true-zen.nvim"
   -- Colorschemes
   use { "folke/tokyonight.nvim", commit = "66bfc2e8f754869c7b651f3f47a2ee56ae557764" }
   use { "lunarvim/darkplus.nvim", commit = "13ef9daad28d3cf6c5e793acfc16ddbf456e1c83" }
   use "EdenEast/nightfox.nvim"
   use "rebelot/kanagawa.nvim"
   use "rose-pine/neovim"
+  use "catppuccin/nvim"
+  use "nyoom-engineering/oxocarbon.nvim"
   use({
     "xiyaowong/nvim-transparent",
     config = function()
@@ -88,6 +90,7 @@ return packer.startup(function(use)
     end
   })
   use "catppuccin/nvim"
+  use "f-person/auto-dark-mode.nvim"
   use "Yazeed1s/oh-lucy.nvim"
   use {
     "folke/todo-comments.nvim",
@@ -123,7 +126,14 @@ return packer.startup(function(use)
   use { "RRethy/vim-illuminate", commit = "a2e8476af3f3e993bb0d6477438aad3096512e42" }
   use "github/copilot.vim"
   use "onsails/lspkind-nvim"
-  use 'glepnir/lspsaga.nvim' -- LSP UIs
+  use({
+    "glepnir/lspsaga.nvim",
+    branch = "main",
+    config = function()
+      require('lspsaga').setup ({ })
+    end,
+  })
+  use "jxnblk/vim-mdx-js"
 
   use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })  -- Telescope
 

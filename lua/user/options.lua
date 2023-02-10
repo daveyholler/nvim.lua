@@ -40,11 +40,14 @@ vim.opt.shortmess:append "c"                    -- hide all the completion messa
 vim.opt.whichwrap:append("<,>,[,],h,l")         -- keys allowed to move to the previous/next line when the beginning/end of line is reached
 vim.opt.iskeyword:append("-")                   -- treats words with `-` as single words
 vim.opt.guifont = { "JetBrainsMono Nerd Font:h14", "monospace:h14" } -- the font used in graphical neovim applications
+vim.opt.linebreak = true
+vim.opt.list = false
 vim.cmd "let g:transparent_enabled = v:true"
 vim.cmd "let g:neovide_transparency = 0.0"
 vim.cmd "let g:transparency = 0.9"
 vim.cmd "let g:neovide_background_color = '#0f1117'.printf('%x', float2nr(255 * g:transparency))"
 vim.cmd "let g:neovide_floating_blur_amount_x = 2.0"
 vim.cmd "let g:neovide_floating_blur_amount_y = 2.0"
+vim.opt.background = 'light'
 
 vim.cmd("autocmd Colorscheme * highlight NvimTreeNormal guibg=none guifg=#9da5b3")

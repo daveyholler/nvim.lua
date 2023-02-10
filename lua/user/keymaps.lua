@@ -17,6 +17,10 @@ vim.g.mapleader = " "
 --   command_mode = "c",
 
 -- Normal --
+keymap("n", "<leader>tl", ":set background=light | :Catppuccin latte<CR> | :!cp ~/.wezterm.light.lua ~/.wezterm.lua <CR><CR>")
+keymap("n", "<leader>td", ":set background=dark | :Catppuccin mocha<CR> | :!cp ~/.wezterm.dark.lua ~/.wezterm.lua <CR><CR>")
+-- keymap("n", "<leader>tl", ":set background=light | :!cp ~/.wezterm.light.lua ~/.wezterm.lua <CR><CR>")
+-- keymap("n", "<leader>td", ":set background=dark | :!cp ~/.wezterm.dark.lua ~/.wezterm.lua <CR><CR>")
 -- Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
